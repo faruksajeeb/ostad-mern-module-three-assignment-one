@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Spread Operator</title>
+</head>
+<body>
+    <p>Question No. 3</p>
+    <p>
+        Write a JavaScript function named mergeArrays that takes two arrays as arguments and returns 
+        a new array that merges both arrays using the spread operator.
+    </p>
+    <script>
+        const mergeArrays = (arr1,arr2)=>{
+           return mergeArr = [...arr1,...arr2];
+        }
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+        console.log(mergeArrays(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
+      
+    </script>
+</body>
+</html>

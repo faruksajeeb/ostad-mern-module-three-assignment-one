@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript es6 class inheritance</title>
+</head>
+<body>
+    <p>Question No. 7</p>
+    <p>
+        Create a JavaScript class named Animal with a constructor that takes two parameters: name and sound.
+         The class should have a method named makeSound that logs the sound of the animal.
+         
+Next, create a subclass of Animal named Dog. The Dog class should have 
+an additional method named fetch that logs "Fetching the ball!".
+    </p>
+    <script>
+        class Animal{
+            constructor(name,sound){
+                this.name = name;
+                this.sound = sound;
+            }
+            makeSound(){
+                console.log(`${this.sound}`);
+            }
+        }
+
+        class Dog extends Animal{
+            fetch() {
+                console.log("Fetching the ball!");
+            }
+        }
+        
+        const animal = new Animal("Lion", "Roar");
+
+        animal.makeSound(); // Output: "Roar"
+        
+        const dog = new Dog("Buddy", "Woof");
+
+
+        dog.makeSound(); // Output: "Woof"
+        
+        
+        dog.fetch(); // Output: "Fetching the ball!"
+      
+    </script>
+</body>
+</html>
